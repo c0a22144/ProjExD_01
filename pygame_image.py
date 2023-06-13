@@ -20,7 +20,7 @@ def main():
         if tmr == 800:
             tmr = 0
         screen.blit(bg_img, [-tmr, 0])
-        screen.blit(kk_imgs[tmr%2],[300,200])
+        screen.blit(kk_imgs[tmr%200//100],[300,200])
         pg.display.update()
         tmr += 1
 
